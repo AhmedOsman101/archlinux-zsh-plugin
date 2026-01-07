@@ -203,7 +203,7 @@ function upgrade() {
   fi
   if (( $+commands[paru] )); then
     paru -Su
-  if (( $+commands[yay] )); then
+  elif (( $+commands[yay] )); then
     yay -Su
   elif (( $+commands[trizen] )); then
     trizen -Su
